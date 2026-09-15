@@ -1,0 +1,33 @@
+# Commercial License Guard .gitignore
+
+# Credentials & Sensitive Keys (NEVER COMMIT)
+*.pem
+*.key
+*.secret
+.env
+*.env
+admin_private_key.pem
+
+# Build & Release Artifacts
+dist/
+build/
+*.zip
+.pyarmor/
+
+# Python Cache & Runtime
+__pycache__/
+*/__pycache__/
+*.py[cod]
+*.so
+*.pyd
+*.log
+logs/
+.system_generated/
+.local/
+eval-runs/
+
+# Operating System & IDE Artifacts
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

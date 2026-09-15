@@ -1,0 +1,18 @@
+{
+  "_comment": "Commercial License Guard Configuration Template",
+  "cloud_auth": {
+    "enabled": true,
+    "endpoint": "https://your-auth-gateway.your-subdomain.workers.dev",
+    "timeout_seconds": 6,
+    "fallback_to_local_rsa": true
+  },
+  "local_auth": {
+    "public_key_file": "public_key.pem",
+    "require_hardware_mid": true,
+    "allow_master_key": true
+  },
+  "quota_limits": {
+    "max_store_switches_per_window": 1,
+    "block_unbind_after_quota_exhausted": true
+  }
+}
